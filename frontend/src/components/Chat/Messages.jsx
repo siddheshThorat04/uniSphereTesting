@@ -25,7 +25,7 @@ const Messages = () => {
         <div id='savedchat' className='messageContainer' ref={messagesRef}>
             <button className= {isDark==="false"?"HomeButton HomeButtonDark ":"HomeButton"}  ><GoHome onClick={() => window.location.href = "/"   } className={isDark==="false"?"HomeButton text-balck":"HomeButton text-white"}  /></button>
             <div className='googleAd' ></div>
-            {!isSearching && !receiver && receiver !== "" && (
+            {!receiver && receiver !== "" && (
                 <>
                     <div className='welcomeText'>No more Users Online 😔</div>
                 </>
