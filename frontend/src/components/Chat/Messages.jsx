@@ -16,23 +16,13 @@ const Messages = () => {
             messagesRef.current.scrollTop = messagesRef.current.scrollHeight;
         }
     }, [messages]);
-    const newChat = () => {
-        // setIsSearching(true)
-        // setMessages([])
-        // socket.emit("pairing-user", userId, (error) => {
-        //     if (error) {
-        //         return alert(error);
-        //     }
-        // })
-        // return () => {
-        //     socket.off("pairing-user");
-        // };
+    const findNewChat = () => {
             window.location.href = "/chatHome";
 
     }
 
     return (
-        <div id='savedchat' className='messageContainer  min-w-[600px] ' ref={messagesRef}>
+        <div id='savedchat' className='messageContainer' ref={messagesRef}>
             <button className= {isDark==="false"?"HomeButton HomeButtonDark ":"HomeButton"}  ><GoHome onClick={() => window.location.href = "/"   } className={isDark==="false"?"HomeButton text-balck":"HomeButton text-white"}  /></button>
             <div className='googleAd' ></div>
             {/* {!isSearching && !receiver && receiver !== "" && (

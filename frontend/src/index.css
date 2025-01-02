@@ -411,6 +411,7 @@ body::-webkit-scrollbar {
     /* Reduced height for larger screens */
     border: 1px solid white;
     border-radius: 2%;
+    min-width: 600px;
 
   }
 
