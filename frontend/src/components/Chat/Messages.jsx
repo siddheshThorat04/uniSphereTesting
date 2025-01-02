@@ -27,7 +27,7 @@ const Messages = () => {
         // return () => {
         //     socket.off("pairing-user");
         // };
-            window.location.href = "/";
+            window.location.href = "/chatHome";
 
     }
 
