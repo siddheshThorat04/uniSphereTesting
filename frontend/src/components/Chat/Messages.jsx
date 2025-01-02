@@ -47,7 +47,7 @@ const Messages = () => {
             {isTyping && <div className= "isTyping"  ><span className='strangerDp' ><img src={dp}   alt="" /></span> <h4 className='text-blue-500'  >typing...🤔</h4></div>}
 
            
-            {isSearching && <p className={isDark==="false"?'text-blue-700 text-center':' text-blue-500 text-center'}>Looking for someone you can chat with...🧐</p>}
+            {isSearching && !receiver && <p className={isDark==="false"?'text-blue-700 text-center':' text-blue-500 text-center'}>Looking for someone you can chat with...🧐</p>}
             {
                 !isSearching && !receiver && receiver === "" &&
                 <>
