@@ -30,7 +30,7 @@ function App() {
       <Socket />
         <Routes>  
           <Route path="/" element={ authUser?  <Home2 />:<Navigate to="/signup"/>} />
-          <Route path="/chatHome"  element={authUser? <Home/>:<Navigate to="/login"/>}/>
+          <Route path="/chatHome"  element={<Home/>}/>
           <Route path="/chat" element={<Chat />} />
           <Route path="/login" element={!authUser? <Login/>:<Navigate to="/"/>} />
           <Route path="/signup" element={!authUser? <Signup/>:<Navigate to="/"/>} />
