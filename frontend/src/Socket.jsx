@@ -6,7 +6,7 @@ import { useChat } from './contextApi/ChatContext';
 
 const API_URL = "https://unispheretesting-4.onrender.com";
 
-export const socket = io(URL, {
+export const socket = io(API_URL, {
     autoConnect: false,
     reconnectionAttempts: 3,
 });
