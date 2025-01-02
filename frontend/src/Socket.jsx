@@ -4,7 +4,7 @@ import { v4 as uuidv4 } from 'uuid';
 import { useChat } from './contextApi/ChatContext';
 // import beepSound from "./assets/ping-82822.mp3"
 
-const API_URL = "https://unispheretesting-4.onrender.com";
+const API_URL = "https://unispheretesting-5.onrender.com";
 
 export const socket = io(API_URL, {
     autoConnect: false,

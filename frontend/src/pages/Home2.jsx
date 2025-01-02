@@ -9,7 +9,7 @@ import { useAuthContext } from '../contextApi/authContext'
 import eventsLogo from '../assets/events.png'
 import { useDarkThemeContext } from '../contextApi/DarkTheme';
 const Home2 = () => {
-  const API_URL="https://unispheretesting-4.onrender.com"
+  const API_URL="https://unispheretesting-5.onrender.com"
     const {authUser,setauthUser}=useAuthContext()
      const {isDark, setDark}=useDarkThemeContext()
     const [isSideBarOn, setIsSideBarOn] = useState(false);

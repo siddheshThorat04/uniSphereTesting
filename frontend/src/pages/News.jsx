@@ -15,7 +15,7 @@ const News = () => {
   const [isAdding, setIsAdding] = useState(false);
   const [news, setnews] = useState([]);
   const {isDark, setDark}=useDarkThemeContext()
-  const API_URL = "https://unispheretesting-4.onrender.com";
+  const API_URL = "https://unispheretesting-5.onrender.com";
   useEffect(() => {
     const getNews = async () => {
       const res = await fetch(`${API_URL}/api/user/getNews`, {
