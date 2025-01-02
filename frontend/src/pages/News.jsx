@@ -1,5 +1,4 @@
 
-"use client"
 import React, { useEffect, useState } from 'react'
 import dp from "../assets/dp.png"
 import axios from "axios"
