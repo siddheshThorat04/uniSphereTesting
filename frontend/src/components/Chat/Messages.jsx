@@ -27,7 +27,7 @@ const Messages = () => {
             <div className='googleAd' ></div>
             {!receiver && receiver !== "" && (
                 <>
-                    <div className='welcomeText'>No more Users Online 😔</div>
+                    <div className='welcomeText'>waiting.....🙂</div>
                 </>
             )}
 
