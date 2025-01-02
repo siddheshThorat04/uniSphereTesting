@@ -32,7 +32,7 @@ const Messages = () => {
     }
 
     return (
-        <div id='savedchat' className='messageContainer' ref={messagesRef}>
+        <div id='savedchat' className='messageContainer  min-w-[600px] ' ref={messagesRef}>
             <button className= {isDark==="false"?"HomeButton HomeButtonDark ":"HomeButton"}  ><GoHome onClick={() => window.location.href = "/"   } className={isDark==="false"?"HomeButton text-balck":"HomeButton text-white"}  /></button>
             <div className='googleAd' ></div>
             {!isSearching && !receiver && receiver !== "" && (
