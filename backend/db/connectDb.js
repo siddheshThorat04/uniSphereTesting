@@ -2,7 +2,7 @@ const  mongoose =require ("mongoose");
 
 const connectDb = async () => {
     try {
-        mongoose.connect("mongodb+srv://siddhesh2:9967821063@cluster0.uj4qs.mongodb.net/uniSphere2?retryWrites=true&w=majority&appName=Cluster0",)
+        mongoose.connect(process.env.MONGODB_URL,)
             .then(() => console.log('Connected to MongoDB successfully'))
             .catch(err => console.error('Failed to connect to MongoDB:', err));
         console.log(`MongoDB Connected`);
