@@ -25,11 +25,11 @@ const Messages = () => {
         <div id='savedchat' className='messageContainer' ref={messagesRef}>
             <button className= {isDark==="false"?"HomeButton HomeButtonDark ":"HomeButton"}  ><GoHome onClick={() => window.location.href = "/"   } className={isDark==="false"?"HomeButton text-balck":"HomeButton text-white"}  /></button>
             <div className='googleAd' ></div>
-            {/* {!isSearching && !receiver && receiver !== "" && (
+            {!isSearching && !receiver && receiver !== "" && (
                 <>
                     <div className='welcomeText'>No more Users Online 😔</div>
                 </>
-            )} */}
+            )}
 
             {receiver && <p className={isDark==="false"?'connectedText text-blue-700  text-center ':'text-blue-500 text-center '}>Connected ✅</p>}
             {messages.map((message, index) => (
@@ -47,7 +47,7 @@ const Messages = () => {
             {isTyping && <div className= "isTyping"  ><span className='strangerDp' ><img src={dp}   alt="" /></span> <h4 className='text-blue-500'  >typing...🤔</h4></div>}
 
            
-            {isSearching && !receiver && <p className={isDark==="false"?'text-blue-700 text-center':' text-blue-500 text-center'}>Looking for someone you can chat with...🧐</p>}
+            {isSearching && <p className={isDark==="false"?'text-blue-700 text-center':' text-blue-500 text-center'}>Looking for someone you can chat with...🧐</p>}
             {
                 !isSearching && !receiver && receiver === "" &&
                 <>
