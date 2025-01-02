@@ -25,12 +25,11 @@ const Messages = () => {
         <div id='savedchat' className='messageContainer' ref={messagesRef}>
             <button className= {isDark==="false"?"HomeButton HomeButtonDark ":"HomeButton"}  ><GoHome onClick={() => window.location.href = "/"   } className={isDark==="false"?"HomeButton text-balck":"HomeButton text-white"}  /></button>
             <div className='googleAd' ></div>
-            {/* {!isSearching && !receiver && receiver !== "" && (
+            {!isSearching && !receiver && receiver !== "" && (
                 <>
-                    <div className='welcomeText'>mateBatu : talk to strangers</div>
-                    <div className='startBtnSmall' onClick={newChat}>Start a new conversation</div>
+                    <div className='welcomeText'>No more Users Online 😔</div>
                 </>
-            )} */}
+            )}
 
             {receiver && <p className={isDark==="false"?'connectedText text-blue-700  text-center ':'text-blue-500 text-center '}>Connected ✅</p>}
             {messages.map((message, index) => (
