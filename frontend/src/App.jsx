@@ -6,7 +6,6 @@ import Chat from './pages/Chat';
 import Socket from './Socket';
 import { useAuthContext } from './contextApi/authContext.jsx';
 
-import Toaster from 'react-hot-toast'
 
 
 import Login from "./pages/Login.jsx"
