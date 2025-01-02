@@ -12,10 +12,7 @@ const userRoutes=require("./routes/userRoutes");
 const path = require("path");
 const app = express()
 
-const port = process.env.PORT
-const __dirname = path.resolve();
-
-
+const port = process.env.PORT || 8080
 const server = createServer(app)
 
 
@@ -26,12 +23,6 @@ app.use(express.json())
 app.use("/api/auth",authRoutes)
 app.use("/api/admin",adminRoutes)
 app.use("/api/user",userRoutes)
-
-app.use(express.static(path.join(__dirname, "./frontend/dist")))
-
-app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname, "./frontend/dist/index.html"))
-})
 
 server.listen(port, () => {
     connectDb()
