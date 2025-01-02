@@ -12,6 +12,8 @@ const ProfilePage = () => {
   const [user, setUser] = useState()
   const { authUser, setauthUser } = useAuthContext()
   const {isDark}= useDarkThemeContext()
+
+  const API_URL = "https://unispheretesting-4.onrender.com"
   useEffect(() => {
     const getProfile = async () => {
       const res = await fetch(`${API_URL}/api/user/getProfile/` + userId, {

@@ -10,7 +10,7 @@ import Slider from '../components/Slider';
 const Signup = () => {
   
 
-  const API_URL="http://localhost:8080"
+  const API_URL="https://unispheretesting-4.onrender.com"
   const [colleges, setcolleges] = useState([]);
   const {isDark, setDark}=useDarkThemeContext()
   const{authUser, setauthUser}=useAuthContext()

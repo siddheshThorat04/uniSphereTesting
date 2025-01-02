@@ -16,7 +16,7 @@ const Events = () => {
   const [events, setevents] = useState([]);
   const {isDark}=useDarkThemeContext()
   const {authUser}=useAuthContext()
-  const API_URL = "http://localhost:8080";
+  const API_URL = "https://unispheretesting-4.onrender.com";
   useEffect(() => {
     const getEvents = async () => {
       const res = await fetch(`${API_URL}/api/user/getEvents`, {

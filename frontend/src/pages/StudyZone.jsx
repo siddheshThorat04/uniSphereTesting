@@ -9,7 +9,7 @@ import { useDarkThemeContext } from '../contextApi/DarkTheme';
 const StudyZone = () => {
     const {authUser}=useAuthContext()
     const {isDark}=useDarkThemeContext()
-    const API_URL="http://localhost:8080"
+    const API_URL="https://unispheretesting-4.onrender.com"
     const [meetZone, setMeetZone] = useState([]);
     useEffect(() => {
         const getNews = async () => {
