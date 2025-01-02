@@ -26,7 +26,7 @@ app.use("/api/user",userRoutes)
 
 server.listen(port, () => {
     connectDb()
-    console.log(`Server run on port http://localhost:${port}`)
+    console.log(`Server run on ports http://localhost:${port}`)
 })
 
 socketSetup(server)
